@@ -49,13 +49,13 @@ def generateRadarFigure(playerName, playerAge, nGames, nGoals, nAssists, pathFon
                 #                         )
                 # CREATE BOXES FOR EACH ELEMENT OF THE TEMPLATE
                 templateSection[toModify].tick_params(
-                                                axis        ='both', # changes apply to both axis
-                                                which       ='both', # major and minor ticks are affected
-                                                bottom      = False, # ticks along the bottom edge are off
-                                                top         = False, # ticks along the top edge are off
-                                                left        = False, # ticks along the left edge are off
-                                                labelbottom = False, # labels along the bottom edge are off
-                                                labelleft   = False  # labels along the left edge are off
+                                                axis        = 'both', # changes apply to both axis
+                                                which       = 'both', # major and minor ticks are affected
+                                                bottom      = False,  # ticks along the bottom edge are off
+                                                top         = False,  # ticks along the top edge are off
+                                                left        = False,  # ticks along the left edge are off
+                                                labelbottom = False,  # labels along the bottom edge are off
+                                                labelleft   = False   # labels along the left edge are off
                                             )
                 templateSection[toModify].axis("off")
                 
@@ -94,7 +94,7 @@ def generateRadarFigure(playerName, playerAge, nGames, nGoals, nAssists, pathFon
                                             xy     = (0.12, 1),
                                             text   = infoName,
                                             size   = 20,
-                                            color  = "white",
+                                            color  = "#FFE634",
                                             weight = "bold",
                                             ha     = "left",
                                             va     = "top",
@@ -111,7 +111,7 @@ def generateRadarFigure(playerName, playerAge, nGames, nGoals, nAssists, pathFon
                                             xy     = (0.155, 1),
                                             text   = graphTitle,
                                             size   = 20,
-                                            color  = "white",
+                                            color  = "#FFE634",
                                             weight = "bold",
                                             ha     = "left",
                                             va     = "top",
@@ -132,7 +132,7 @@ def generateRadarFigure(playerName, playerAge, nGames, nGoals, nAssists, pathFon
                                             xy   = (0.12, 1),
                                             text   = infoText,
                                             size   = 14,
-                                            color  = 'white',
+                                            color  = '#FFE634',
                                             weight = "bold",
                                             ha     = "left",
                                             va     = "top",

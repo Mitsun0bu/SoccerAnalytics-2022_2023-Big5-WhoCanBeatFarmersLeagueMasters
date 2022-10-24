@@ -35,7 +35,6 @@ title                   = "Can You Beat\nFarmers' League Masters ?\n\nSeason 202
 
 pathPhotoMbappé         = "../img/Mbappé.png"
 pathPhotoHaaland        = "../img/Haaland.png"
-pathPhotoContender      = "../img/Haaland.png"
 
 pathRadarMbappé         = "../output/Kylian Mbappé.png"
 pathRadarHaaland        = "../output/Erling Haaland.png"
@@ -48,23 +47,23 @@ strikerNamesList        = getPlayerNamesList(dfStrikers)
 params                  = list(dfStrikers.columns)
 params                  = params[7:]
 
-# contender             = random.choice(strikerNamesList)
+# contender               = random.choice(strikerNamesList)
 # print(contender)
-contender               = "Paulo Dybala"
-colorContender          = ["#B30838", "#F89728"]
-pathLogoContenderClub   = "../img/logoAsRoma.png"
-pathLogoContenderLeague = pathLogoSerieA
-pathPhotoContender      = "../img/Paulo Dybala.png"
+contender               = "Marcus Rashford"
+colorContender          = ["#E1422C", "#FFE634"]
+pathLogoContenderClub   = "../img/logoManU.png"
+pathLogoContenderLeague = pathLogoPremierLeague
+pathPhotoContender      = "../img/Marcus Rashford.png"
 pathRadarContender      = "../output/" + contender + ".png"
 
 
 for striker in strikerNamesList:
     if striker == "Kylian Mbappé":
         generateStrikerRadar(dfStrikers, striker, params, colorPsg[0], colorPsg[1], 'white')
-        generateRadarFigure("K. Mbappé", "23", "9", "8", "0", pathFont, title, colorPsg[0], pathLogoPsg, pathLogoLigue1, pathPhotoMbappé, pathRadarMbappé)
+        generateRadarFigure("K. Mbappé", "23", "11", "10", "2", pathFont, title, colorPsg[0], pathLogoPsg, pathLogoLigue1, pathPhotoMbappé, pathRadarMbappé)
     elif striker == "Erling Haaland":
         generateStrikerRadar(dfStrikers, striker, params, colorManCity[0], colorManCity[1], 'white')
-        generateRadarFigure("E. Haaland", "22", "9", "15", "3", pathFont, title, colorManCity[0], pathLogoManCity, pathLogoPremierLeague, pathPhotoHaaland, pathRadarHaaland)
+        generateRadarFigure("E. Haaland", "22", "11", "17", "3", pathFont, title, colorManCity[0], pathLogoManCity, pathLogoPremierLeague, pathPhotoHaaland, pathRadarHaaland)
     elif striker == contender:
-        generateStrikerRadar(dfStrikers, striker, params, colorContender[0], colorContender[1], "white")
-        generateRadarFigure("P. Dybala", "28", "8", "5", "2", pathFont, title, colorContender[0], pathLogoContenderClub, pathLogoContenderLeague, pathPhotoContender, pathRadarContender)
+        generateStrikerRadar(dfStrikers, striker, params, colorContender[0], colorContender[1], "black")
+        generateRadarFigure("M. Rashford", "24", "11", "3", "2", pathFont, title, colorContender[0], pathLogoContenderClub, pathLogoContenderLeague, pathPhotoContender, pathRadarContender)
